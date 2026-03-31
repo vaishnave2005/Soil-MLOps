@@ -16,5 +16,5 @@ jobs:
 
       - name: Validate CSV Columns
         run: |
-          python -c "import pandas as pd; df=pd.read_csv('crop_recommendation.csv'); required=['N','P','K','ph']; assert all(col in df.columns for col in required)"
+          python -c "import pandas as pd; df=pd.read_csv('Crop_recommendation.csv'); required=['N','P','K','ph']; assert all(col in df.columns for col in required)"
           echo "CI/CD: Data Schema Validated Successfully!"
